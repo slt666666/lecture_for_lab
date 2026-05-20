@@ -337,13 +337,22 @@ https://filezilla-project.org/
 
 以下のデータをスパコン上に入れて、
 
-URL: XXXXX
+URL: https://github.com/slt666666/lecture_for_lab/raw/refs/heads/main/data/sample.fastq.gz
 
 クオリティコントロール用の`fastp`というプログラムが遺伝研スパコンではもともと使用出来ると思うので、
 
 下記コマンドをJobとして実行してください。
 
 ```
-fastp XXX
+fastp -i sample.fastq.gz -o sample_filtered.fastq.gz -w 3 -q 15 -n 10
 ```
+
+手順
+
+1. `wget`コマンドで`sample.fastq.gz`をダウンロード。
+2. さきほどの`job_script.sh`をFileZillaで自分のPCに持ってくる。
+3. "ここより後に実行したいプログラムを書く"以降を削除し、代わりに上のコマンドを書いて保存。
+4. FileZillaで遺伝研スパコンに再び戻す。
+5. `sbatch`コマンドで実行する。
+
 
