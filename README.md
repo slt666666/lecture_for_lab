@@ -241,7 +241,7 @@ apt install screenfetch
 
 先ほどの`wget`コマンドを使用して、
 
-スクリプト: https://github.com/slt666666/lecture_for_lab/blob/main/data/shell_test.sh
+Shell スクリプト: https://github.com/slt666666/lecture_for_lab/blob/main/data/shell_test.sh
 
 をダウンロードしてください。
 
@@ -282,38 +282,41 @@ bash test.sh
 
 さっき扱ったShellスクリプトの様なスクリプトを書いて実行する形になります。
 
-下記コマンドで一例をダウンロードしてみましょう。
+下記コマンドで一例`job_script.sh`をダウンロードしてください。
 
-```
-wget XXXXXjob_script.sh
-```
+Jobスクリプト: https://raw.githubusercontent.com/slt666666/lecture_for_lab/refs/heads/main/data/job_script.sh
 
-`less`コマンドで中身を見てみてください。
+`less`コマンドで中身を見てみると以下の様な内容が書かれています。
 
 ```
 #!/bin/bash
-#SBATCH -p epyc
-#SBATCH -t 0-00:10:00
-#SBATCH --mem-per-cpu 4g
-#SBATCH -J an_example
+#SBATCH -p epyc                     -> どのサーバーを使用するか
+#SBATCH -t 0-00:10:00               -> 確保時間
+#SBATCH --mem-per-cpu 4g            -> CPUあたりのメモリ(これは4GB)
+#SBATCH -J an_example               -> ジョブ名
  
-
+...略
 ```
 
-実際にこのスクリプトをJobとして実行するには下記コマンドを動かします。
+CPUあたりのメモリや確保時間を大きくすると、中々ジョブが動かなくなります。
+
+実際にこのスクリプトをJobとして実行するには`sbatch`コマンドで動かします。
 
 ```
 sbatch job_script.sh
 ```
 
-今自分がどんなJobを入れているかは
+上手くJobが入っていれば、`job_test`というフォルダを作成し、その中に10秒に1ファイルを作成する、という処理が動いているはずです。
+
+また、今自分がどんなJobを入れているかは
 
 ```
 squeue -u accountname
 ```
-で確認する事が出来ます。
 
-Jobスクリプトは、色々細かく設定できますが、詳しくは　https://sc.ddbj.nig.ac.jp/guides/software/JobScheduler/Slurm/　のバッチジョブやパラレルジョブの項を参照してください。
+で確認する事が出来るので、うまくJobが入っていれば何か表示されているはずです。
+
+Jobスクリプトは、複数のCPUを使用したり、他にも色々細かく設定できますが、詳しくは　https://sc.ddbj.nig.ac.jp/guides/software/JobScheduler/Slurm/　のバッチジョブやパラレルジョブの項を参照してください。
 
 
 ## 自分のPCから遺伝研スパコンへのデータ移行
