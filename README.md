@@ -239,13 +239,13 @@ apt install screenfetch
 
 ひとまず簡単な例を実行してみます。
 
-```
-wget XXXXXXXXXXXXtest.sh
-```
+先ほどの`wget`コマンドを使用して、
 
-でtest.shというファイルをダウンロードします。
+スクリプト: https://github.com/slt666666/lecture_for_lab/blob/main/data/shell_test.sh
 
-test.shには下の様な内容が書いてあります。
+をダウンロードしてください。
+
+ダウンロードしたtest.shには下の様な内容が書いてあります。
 
 ```
 mkdir shell_test
@@ -258,7 +258,7 @@ cd ..
 
 中身はshell_testというフォルダを作成し、その中に移動、そこでtext1~3という3つのファイルを作成する。というコマンドが書かれています。
 
-このtest.shを実行してみましょう。
+このtest.shを実行してみましょう。実行するには`bash`コマンドを使用します。
 
 ```
 bash test.sh
@@ -289,6 +289,16 @@ wget XXXXXjob_script.sh
 ```
 
 `less`コマンドで中身を見てみてください。
+
+```
+#!/bin/bash
+#SBATCH -p epyc
+#SBATCH -t 0-00:10:00
+#SBATCH --mem-per-cpu 4g
+#SBATCH -J an_example
+ 
+
+```
 
 実際にこのスクリプトをJobとして実行するには下記コマンドを動かします。
 
