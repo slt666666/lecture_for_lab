@@ -353,7 +353,7 @@ fastp -i sample.fastq.gz -o sample_filtered.fastq.gz -w 3 -q 15 -n 10
 
 1. `wget`コマンドで`sample.fastq.gz`をダウンロード。
 2. さきほどの`job_script.sh`をFileZillaで自分のPCに持ってくる。
-3. "ここより後に実行したいプログラムを書く"以降を削除し、代わりに上のコマンドを書いて保存。
+3. 自分のPCで"ここより後に実行したいプログラムを書く"以降を削除し、代わりに上のコマンドを書いて保存。
 4. FileZillaで遺伝研スパコンに再び戻す。
 5. `sbatch`コマンドで実行する。
 
