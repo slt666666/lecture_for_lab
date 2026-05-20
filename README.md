@@ -327,6 +327,8 @@ https://filezilla-project.org/
 
 ダウンロード・インストールしてください。直感的にデータのやり取りが出来るようになります。
 
+<img src="https://github.com/slt666666/lecture_for_lab/blob/main/data/filezilla.png?raw=true" alt="title" height="400px">
+
 ## 練習:シーケンスデータ(fastqファイル)のクオリティコントロールの実行
 
 次世代シーケンスを実施するとfastqファイルが得られます。
