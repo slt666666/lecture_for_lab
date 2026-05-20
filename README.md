@@ -355,4 +355,8 @@ fastp -i sample.fastq.gz -o sample_filtered.fastq.gz -w 3 -q 15 -n 10
 4. FileZillaで遺伝研スパコンに再び戻す。
 5. `sbatch`コマンドで実行する。
 
+ただ、わざわざ自分のPCを経由させなくても、スパコン内でコマンドでファイルを編集することも可能です。
 
+'vim'コマンド等で実施できます。
+
+使い方は自分で調べてみてください。
