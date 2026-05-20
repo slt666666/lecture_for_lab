@@ -347,6 +347,8 @@ URL: https://github.com/slt666666/lecture_for_lab/raw/refs/heads/main/data/sampl
 fastp -i sample.fastq.gz -o sample_filtered.fastq.gz -w 3 -q 15 -n 10
 ```
 
+上手く行けば`sample_filtered.fastq.gz`というファイルが出来ているはずです。
+
 手順
 
 1. `wget`コマンドで`sample.fastq.gz`をダウンロード。
