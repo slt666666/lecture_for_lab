@@ -9,7 +9,7 @@ https://sc.ddbj.nig.ac.jp/guides/using_general_analysis_division/
 Mac:ターミナル, Windows:PowerShellを開いて下記コマンドを入力します。
 
 ```
-ssh -i ~/.ssh/id_ed25519 accountname@gw.ddbj.nig.ac.jp
+ssh -i ~/.ssh/id_ed25519_nigsc-gw accountname@gw.ddbj.nig.ac.jp
 ```
 
 `~/.ssh/id_ed25519`の部分はアカウント登録の際に作成したSSH鍵の場所になります。
