@@ -263,7 +263,7 @@ apt install screenfetch
 
 先ほどの`wget`コマンドを使用して、
 
-Shell スクリプト: https://github.com/slt666666/lecture_for_lab/blob/main/data/shell_test.sh
+Shell スクリプト: https://raw.githubusercontent.com/slt666666/lecture_for_lab/refs/heads/main/data/shell_test.sh
 
 をダウンロードしてください。
 
