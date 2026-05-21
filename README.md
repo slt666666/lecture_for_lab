@@ -14,6 +14,11 @@ ssh -i ~/.ssh/id_ed25519_nigsc-gw accountname@gw.ddbj.nig.ac.jp
 
 `~/.ssh/id_ed25519_nigsc-gw`の部分はアカウント登録の際に作成したSSH鍵の場所になります。
 
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_ed25519_nigsc-gw
+```
+
 `accountname`の部分は自分で決めたアカウント名です。
 
 上手くいけば、"Enter passphrase for key ..."と出るので、自分で決めたSSH鍵のパスワードを入力し、Enterを押します。
