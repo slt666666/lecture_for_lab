@@ -9,10 +9,17 @@ https://sc.ddbj.nig.ac.jp/guides/using_general_analysis_division/
 Mac:ターミナル, Windows:PowerShellを開いて下記コマンドを入力します。
 
 まずはSSH鍵の権限を変更
+Macのターミナルの場合
 ```
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/id_ed25519_nigsc-gw
 chmod 600 ~/.ssh/id_ed25519_nigsc-gw.pub
+```
+WindowsのPowerShellの場合
+```
+$keyPath = "C:\path\to\your\id_rsa"
+icacls $keyPath /inheritance:r
+icacls $keyPath /grant:r "$($env:USERNAME):R"
 ```
 
 スパコンへ接続
