@@ -8,15 +8,17 @@ https://sc.ddbj.nig.ac.jp/guides/using_general_analysis_division/
 
 Mac:ターミナル, Windows:PowerShellを開いて下記コマンドを入力します。
 
-```
-ssh -i ~/.ssh/id_ed25519_nigsc-gw accountname@gw.ddbj.nig.ac.jp
-```
-
-`~/.ssh/id_ed25519_nigsc-gw`の部分はアカウント登録の際に作成したSSH鍵の場所になります。
-
+まずはSSH鍵の権限を変更
 ```
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/id_ed25519_nigsc-gw
+chmod 600 ~/.ssh/id_ed25519_nigsc-gw.pub
+```
+
+スパコンへ接続
+
+```
+ssh -i ~/.ssh/id_ed25519_nigsc-gw accountname@gw.ddbj.nig.ac.jp
 ```
 
 `accountname`の部分は自分で決めたアカウント名です。
