@@ -1,3 +1,9 @@
+# 遺伝研スパコンの使い方や簡単なコマンド操作
+
+基本的なことはマニュアルに記載してあります。
+
+https://sc.ddbj.nig.ac.jp/guides/using_general_analysis_division/
+
 # 遺伝研スパコンへのログイン
 
 Mac:ターミナル, Windows:PowerShellを開いて下記コマンドを入力します。
