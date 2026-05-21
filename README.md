@@ -19,7 +19,7 @@ chmod 600 ~/.ssh/id_ed25519_nigsc-gw.pub
 
 WindowsのPowerShellの場合
 ```
-$keyPath = "C:\path\to\your\id_rsa"
+$keyPath = "C:\Users\User\.ssh\id_ed25519_nigsc-gw"
 icacls $keyPath /inheritance:r
 icacls $keyPath /grant:r "$($env:USERNAME):R"
 ```
