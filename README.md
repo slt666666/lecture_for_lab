@@ -341,7 +341,7 @@ https://filezilla-project.org/
 * Host: gw.ddbj.nig.ac.jp
 * Logon Type: Key file
 * User: アカウント名
-* Key file: ssh鍵のファイルを選択すると、`.ppk`をファイルを作成する様な指示が出るので、指示に従って作成し、それを選択。
+* Key file: ssh鍵のファイル(.pubが無い方)を選択すると、`.ppk`をファイルを作成する様な指示が出るので、指示に従って作成し、それを選択。
 
 3. 作成出来たら右下のConnectボタンで接続できます。
 
