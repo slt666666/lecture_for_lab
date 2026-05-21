@@ -333,6 +333,18 @@ https://filezilla-project.org/
 
 ダウンロード・インストールしてください。直感的にデータのやり取りが出来るようになります。
 
+接続方法は
+
+1. 左上のSite Managerをクリック
+2. New Siteから新しい接続先を作成、設定は↓の通り
+* Protocol: SFTP
+* Host: gw.ddbj.nig.ac.jp
+* Logon Type: Key file
+* User: アカウント名
+* Key file: ssh鍵のファイルを選択すると、`.ppk`をファイルを作成する様な指示が出るので、指示に従って作成し、それを選択。
+
+3. 作成出来たら右下のConnectボタンで接続できます。
+
 <img src="https://github.com/slt666666/lecture_for_lab/blob/main/data/filezilla.png?raw=true" alt="title" height="400px">
 
 ## 練習:シーケンスデータ(fastqファイル)のクオリティコントロールの実行
